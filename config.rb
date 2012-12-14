@@ -3,6 +3,9 @@ compass_config do |config|
 end
 
 activate :automatic_image_sizes
+activate :livereload
+
+set :markdown_engine, :redcarpet
 
 set :css_dir,    'stylesheets'
 set :js_dir,     'javascripts'
