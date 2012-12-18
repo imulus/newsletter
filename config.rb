@@ -1,5 +1,6 @@
 compass_config do |config|
   config.output_style = :expanded
+  config.line_comments = false
 end
 
 activate :automatic_image_sizes
