@@ -21,7 +21,7 @@ class Mailer
 
   def initialize(file)
     @file = file
-    @premailer = Premailer.new(file, :warn_level => Premailer::Warnings::SAFE)
+    @premailer = Premailer.new(file, :warn_level => Premailer::Warnings::SAFE, :preserve_styles => true, :preserve_reset => true)
   end
 
   def save!
