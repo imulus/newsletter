@@ -1,19 +1,240 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-  <head>
-    <meta charset="utf-8">
-    
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= data.page.title || "The Middleman" %></title>
-    
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
-  
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta property="og:title" content="*|MC:SUBJECT|*">
+  <title>*|MC:SUBJECT|*</title>
+  <%= stylesheet_link_tag 'application' %>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+  <!-- Background -->
+  <table border="0" cellpadding="0" cellspacing="0" class="background">
+    <tr>
+      <td align="center" valign="top" class="background">
+
+        <!-- Header Background -->
+        <table border="0" cellspacing="0" cellpadding="0" align="center" class="header">
+          <tr height="50">
+            <td width="50%">
+              <%= image_tag 'spacer.gif', :width => '1', :height => '1' %>
+            </td>
+            <td width="600" align="center">
+
+              <!-- Header Wrapper -->
+              <table align="center" width="600" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto">
+                <tr>
+                  <!-- Logo -->
+                  <td width="115" height="50">
+                    <a href="http://imulus.com/" title="Imulus">
+                      <%= image_tag 'logo-top.gif' %>
+                    </a>
+                  </td>
+
+                  <td width="401" height="50">
+                    <%= image_tag 'spacer.gif', :width => '401', :height => '50' %>
+                  </td>
+
+                  <!-- Facebook -->
+                  <td width="36" height="50">
+                    <a href="https://www.facebook.com/imulus" title="Facebook">
+                      <%= image_tag 'facebook.gif' %>
+                    </a>
+                  </td>
+
+                  <!-- Twitter -->
+                  <td width="36" height="50">
+                    <a href="http://twitter.com/imulus" title="Twitter" style=" margin-left:0; margin-right:0; color: #2A5DB0;text-decoration: underline;">
+                      <%= image_tag 'twitter.gif' %>
+                    </a>
+                  </td>
+
+                  <td width="12" height="50">
+                    <%= image_tag 'spacer.gif', :width => '12', :height => '50' %>
+                  </td>
+                </tr>
+              </table>
+              <!-- End Header Wrapper -->
+
+            </td>
+            <td width="50%">
+              <%= image_tag 'spacer.gif', :width => '1', :height => '1' %>
+            </td>
+          </tr>
+        </table>
+        <!-- End Header Background -->
+
+        <!-- Overlap -->
+        <center>
+          <table width="600" height="50" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="115" height="50">
+                <a href="http://imulus.com/" title="Imulus">
+                  <%= image_tag 'logo-bottom.gif' %>
+                </a>
+              </td>
+              <td width="485" height="50" colspan="4">
+                <%= image_tag 'spacer.gif', :width => '485', :height => '50' %>
+              </td>
+            </tr>
+          </table>
+          <!-- End Overlap -->
+
+          <!-- Wrapper -->
+          <table border="0" cellpadding="0" cellspacing="0" class="wrapper" align="center">
+            <tr>
+              <td align="left" valign="top">
+                <%= image_tag 'spacer.gif', :width => '600', :height => '20' %>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="green-border">
+                <%= image_tag 'spacer.gif', :width => '600', :height => '2' %>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content">
+                <table border="0" cellpadding="0" cellspacing="0" width="600" align="center">
+                  <tr>
+                    <td align="left" valign="top" colspan="3">
+                      <%= image_tag 'spacer.gif', :width => '600', :height => '20' %>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" valign="top">
+                      <%= image_tag 'spacer.gif', :width => '20', :height => '1' %>
+                    </td>
+
+                    <td align="left" valign="top">
+                      <%= yield %>
+                    </td>
+
+                    <td align="left" valign="top">
+                      <%= image_tag 'spacer.gif', :width => '20', :height => '1' %>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" valign="top" colspan="3">
+                      <%= image_tag 'spacer.gif', :width => '600', :height => '20' %>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="600" height="20" class="content-spacer">
+                <%= image_tag 'spacer.gif', :width => '600', :height => '20' %>
+              </td>
+            </tr>
+
+            <tr>
+              <td width="600">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" class="quick-links">
+                  <tr>
+                    <td width="600" height="20">
+                      <%= image_tag 'spacer.gif', :width => '600', :height => '20' %>
+                    </td>
+                  </tr>
+
+                  <!-- REPEATER -->
+                  <tr mc:repeatable>
+                    <td>
+                      <table width="600" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="20" align="left" valign="middle">
+                            <%= image_tag 'spacer.gif', :width => '20', :height => '1' %>
+                          </td>
+
+                          <td width="120" align="center" valign="middle" class="date">
+                            <table width="120" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="left" valign="top" class="corner">
+                                  <%= image_tag 'corner-top-left.gif' %>
+                                </td>
+
+                                <td align="left" valign="top" width="100" height="10">
+                                  <%= image_tag 'spacer.gif' %>
+                                </td>
+
+                                <td align="right" valign="top" class="corner">
+                                  <%= image_tag 'corner-top-right.gif' %>
+                                </td>
+                              </tr>
+
+
+                              <tr>
+                                <td align="left" valign="top" width="10">
+                                  <%= image_tag 'spacer.gif' %>
+                                </td>
+
+                                <td align="center" valign="middle" width="100">
+                                  <span class="white" mc:edit="article_date">July 20, 2012</span>
+                                </td>
+
+                                <td align="left" valign="top" width="10">
+                                  <%= image_tag 'spacer.gif' %>
+                                </td>
+                              </tr>
+
+
+                              <tr>
+                                <td align="left" valign="bottom" class="corner">
+                                  <%= image_tag 'corner-bottom-left.gif' %>
+                                </td>
+
+                                <td align="left" valign="top" width="100" height="10">
+                                  <%= image_tag 'spacer.gif' %>
+                                </td>
+
+                                <td align="right" valign="bottom" class="corner">
+                                  <%= image_tag 'corner-bottom-right.gif' %>
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+
+                          <td width="20" align="left" valign="middle">
+                            <%= image_tag 'spacer.gif', :width => '20', :height => '1' %>
+                          </td>
+
+                          <td width="420" align="left" valign="middle" mc:edit="article_link">
+                            <a href="#">Title Goes Here</a>
+                          </td>
+
+                          <td width="20" align="left" valign="middle">
+                            <%= image_tag 'spacer.gif', :width => '20', :height => '1' %>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="5" width="600" height="20">
+                            <%= image_tag 'spacer.gif', :width => '600', :height => '20' %>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- END REPEATER -->
+
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width="600" height="20" class="content-spacer">
+                <%= image_tag 'spacer.gif', :width => '600', :height => '20' %>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
 </html>

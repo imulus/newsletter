@@ -1,0 +1,40 @@
+body {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+#outlook a {
+  padding: 0;
+}
+
+.ExternalClass {
+  width: 100%;
+  line-height: 100%;
+
+  p, span, font, td, div {
+    line-height: 100%;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+
+  td {
+    border-collapse: collapse;
+  }
+}
+
+img {
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+a img {
+  border: none;
+}

@@ -1,0 +1,167 @@
+@import 'reset';
+
+$fontFamily: Arial, sans-serif;
+$baseSize:   14px;
+
+$grey:       #333333;
+$greyMid:    #888888;
+$greyLight:  #ececec;
+$greyDark:   #454344;
+$white:      #ffffff;
+$blue:       #4daed8;
+$green:      #8dc001;
+
+@mixin width($width) {
+  -premailer-width: $width;
+             width: $width;
+}
+
+@mixin height($height) {
+  -premailer-height: $height;
+             height: $height;
+}
+
+body {
+  background-color: $greyLight;
+}
+
+body,
+table,
+td {
+  font-size: $baseSize;
+  font-family: $fontFamily;
+}
+
+.background {
+  @include width(100%);
+  @include height(100%);
+  background-color: $greyLight;
+}
+
+.wrapper {
+  @include width(600px);
+}
+
+.header {
+  @include width(100%);
+  @include height(50px);
+  background-color: $greyDark;
+}
+
+.content {
+  @include width(560px);
+  background-color: $white;
+}
+
+.content-spacer {
+  width: 600px;
+  height: 20px;
+  background-color: $greyLight;
+}
+
+.green-border {
+  @include width(600px);
+  @include height(2px);
+  font-size: 2px;
+  line-height: 2px;
+  background-color: $green;
+}
+
+.quick-links {
+  background-color: $greyDark;
+}
+
+.date {
+  font-size: 12px;
+  background-color: $green;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.corner {
+  @include width(10px);
+  @include height(10px);
+  font-size: 1px;
+  line-height: 1px;
+}
+
+.white {
+  font-color: $white;
+}
+
+p {
+  color: $greyMid;
+  text-align: left;
+  padding: 0;
+  margin: 20px 0;
+  font-size: $baseSize;
+  line-height: $baseSize * 2;
+  font-family: $fontFamily;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontFamily;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fontFamily;
+  color: $greyMid;
+}
+
+a,
+a:link {
+  color: $blue;
+  text-decoration: none;
+}
+
+a img {
+  border: 0;
+}
+
+h1 {
+  font-size: 18px;
+  color: #73b8d5;
+}
+
+h2 {
+  font-size: 16px;
+  color: $grey;
+}
+
+h3 {
+  font-size: $baseSize;
+  font-weight: normal;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: $baseSize;
+  font-weight: normal;
+  color: $grey;
+}
+
+h5 {
+  font-size: $baseSize;
+  font-weight: normal;
+  color: $grey;
+}
+
+h6 {
+  font-size: $baseSize;
+  font-weight: normal;
+  color: $grey;
+}
