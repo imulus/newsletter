@@ -14,6 +14,8 @@ task :build do
     mailer.save!
     puts mailer.warnings if mailer.warnings.any?
   end
+
+  system 'zip -r build/template.zip build/*'
 end
 
 class Mailer
